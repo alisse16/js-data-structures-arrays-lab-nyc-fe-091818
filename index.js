@@ -22,6 +22,11 @@ function prependDriver(name) {
   driversCopy.unshift(name)
   return driversCopy
 }
+function removeLastDriver() {
+  const driversCopy = drivers.slice()
+  driversCopy.pop()
+  return driversCopy
+}
 
 
 
